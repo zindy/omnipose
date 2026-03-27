@@ -7,7 +7,9 @@ import sys
 parser = get_arg_parser()
 
 def main():
-    args = parser.parse_args() 
+    #args = parser.parse_args() 
+    args, unknown = parser.parse_known_args()
+
     args.omni = True
     cellpose_omni_main(args)
 
