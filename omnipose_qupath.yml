@@ -6,6 +6,9 @@ channels:
 
 dependencies:
   - python=3.13
+  - mahotas>=1.4.16
+  - dbscan
+
   - pip
   - pip:
     # --- PyTorch (CUDA 12.8) ---
@@ -33,7 +36,6 @@ dependencies:
     - ncolor>=0.3
     - edt>=3.0
     - fastremap>=1.14
-    - mahotas>=1.4.16
     - tqdm>=4.65
     - opencv-python-headless>=4.9
 
