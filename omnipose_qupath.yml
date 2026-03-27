@@ -6,8 +6,6 @@ channels:
 
 dependencies:
   - python=3.13
-  - mahotas>=1.4.16
-  - dbscan
 
   - pip
   - pip:
@@ -38,6 +36,8 @@ dependencies:
     - fastremap>=1.14
     - tqdm>=4.65
     - opencv-python-headless>=4.9
+    - mahotas>=1.4.16
+    - dbscan
 
     # --- Notebook/tooling (optional) ---
     #- ipykernel
