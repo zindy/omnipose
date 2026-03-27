@@ -6,38 +6,37 @@ channels:
 
 dependencies:
   - python=3.13
-
   - pip
   - pip:
-      # --- PyTorch (CUDA 12.8) ---
-      - --extra-index-url https://download.pytorch.org/whl/cu128
-      - torch==2.7.1
-      - torchvision==0.22.1
-      - torchaudio==2.7.1
+    # --- PyTorch (CUDA 12.8) ---
+    - "--extra-index-url https://download.pytorch.org/whl/cu128"
+    - torch==2.7.1
+    - torchvision==0.22.1
+    - torchaudio==2.7.1
 
-      # --- Omnipose from GitHub (latest dev) ---
-      - git+https://github.com/zindy/omnipose.git
+    # --- Omnipose from GitHub (latest dev) ---
+    - git+https://github.com/zindy/omnipose.git
 
-      # --- Core scientific stack ---
-      - numpy>=1.26
-      - scipy>=1.11
-      - scikit-image>=0.22
-      - matplotlib>=3.8
-      - tifffile>=2023.1.1
-      - imageio>=2.33
+    # --- Core scientific stack ---
+    - numpy>=1.26
+    - scipy>=1.11
+    - scikit-image>=0.22
+    - matplotlib>=3.8
+    - tifffile>=2023.1.1
+    - imageio>=2.33
 
-      # --- Numba stack: must be >=0.61 for Python 3.13 support ---
-      - numba>=0.61        # 0.61 = first release with Py3.13; current is 0.64
-      - llvmlite>=0.44     # follows numba versioning
+    # --- Numba stack: must be >=0.61 for Python 3.13 support ---
+    - numba>=0.61        # 0.61 = first release with Py3.13; current is 0.64
+    - llvmlite>=0.44     # follows numba versioning
 
-      # --- Omnipose/Cellpose-specific deps ---
-      - ncolor>=0.3
-      - edt>=3.0
-      - fastremap>=1.14
-      - mahotas>=1.4.16
-      - tqdm>=4.65
-      - opencv-python-headless>=4.9
+    # --- Omnipose/Cellpose-specific deps ---
+    - ncolor>=0.3
+    - edt>=3.0
+    - fastremap>=1.14
+    - mahotas>=1.4.16
+    - tqdm>=4.65
+    - opencv-python-headless>=4.9
 
-      # --- Notebook/tooling (optional) ---
-      #- ipykernel
-      #- ipywidgets
+    # --- Notebook/tooling (optional) ---
+    #- ipykernel
+    #- ipywidgets
