@@ -5,7 +5,7 @@ channels:
   - conda-forge
 
 dependencies:
-  - python=3.13
+  - python=3.12
 
   - pip
   - pip:
@@ -19,16 +19,16 @@ dependencies:
     - git+https://github.com/zindy/omnipose.git
 
     # --- Core scientific stack ---
-    - numpy>=1.26
-    - scipy>=1.11
-    - scikit-image>=0.22
+    - numpy>=2.4.3
+    - scipy>=1.17
+    - scikit-image>=0.26
     - matplotlib>=3.8
-    - tifffile>=2023.1.1
+    - tifffile>=2026.3.3
     - imageio>=2.33
 
     # --- Numba stack: must be >=0.61 for Python 3.13 support ---
-    - numba>=0.61        # 0.61 = first release with Py3.13; current is 0.64
-    - llvmlite>=0.44     # follows numba versioning
+    - numba>=0.64              # 0.61 = first release with Py3.13; current is 0.64
+    - llvmlite>=0.46           # follows numba versioning
 
     # --- Omnipose/Cellpose-specific deps ---
     - ncolor>=0.3
@@ -37,7 +37,7 @@ dependencies:
     - tqdm>=4.65
     - opencv-python-headless>=4.9
     - mahotas>=1.4.16
-    - dbscan
+    - https://github.com/zindy/dbscan-python/releases/download/v1.0.0/dbscan-1.0.0-cp312-abi3-win_amd64.whl
 
     # --- Notebook/tooling (optional) ---
     #- ipykernel
